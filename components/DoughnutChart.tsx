@@ -20,7 +20,14 @@ const DoughnutChart = ({ accounts }: DoughnutChartProps) => {
   };
   return (
     <div>
-      <Doughnut data={adata} />
+      <Doughnut
+        data={adata}
+        options={{
+          cutout: "60%",
+          responsive: true,
+          maintainAspectRatio: false,
+        }}
+      />
     </div>
   );
 };
